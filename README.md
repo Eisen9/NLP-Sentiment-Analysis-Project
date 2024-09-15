@@ -1,83 +1,52 @@
+
 # NLP Sentiment Analysis Project
 
-## Overview
+This repository contains two Jupyter notebooks that showcase sentiment analysis using Natural Language Processing (NLP) techniques. The project demonstrates two different approaches: one using a simple model and another using a more advanced, cutting-edge model based on BERT.
 
-This project demonstrates a simple Natural Language Processing (NLP) application for sentiment analysis on movie reviews. It uses the NLTK library's movie reviews dataset and the TextBlob library for sentiment classification.
+## Files
 
-## Features
+1. **`NLP_Presentation.ipynb`**
+   - **Description**: This notebook contains a simple implementation of sentiment analysis. It showcases basic NLP techniques to classify text as positive, negative, or neutral.
+   - **Usage**: Suitable for educational purposes and simple text classification tasks.
+   - **Key Libraries Used**:
+     - `sklearn`
+     - `nltk`
+     - `pandas`
 
-1. Sentiment analysis on pre-existing movie reviews dataset
-2. Interactive sentiment analysis for user-input movie reviews
-3. Simple command-line interface for easy interaction
-
-## Requirements
-
-- Python 3.x
-- NLTK
-- TextBlob
+2. **`Sentiment_Analysis_with_BERT.ipynb`**
+   - **Description**: This notebook provides an advanced sentiment analysis using a pre-trained BERT model. It handles more complex text inputs, offering detailed sentiment classification with sentiment strength and confidence levels.
+   - **Usage**: Ideal for projects requiring cutting-edge sentiment analysis with nuanced understanding of text.
+   - **Key Libraries Used**:
+     - `transformers`
+     - `torch`
+     - `datasets`
 
 ## Installation
 
-1. Clone this repository:
-   ```
-   git clone https://github.com/yourusername/nlp-sentiment-analysis.git
-   cd nlp-sentiment-analysis
-   ```
+To run the notebooks, follow these steps:
 
-2. Install the required libraries:
-   ```
-   pip install nltk textblob
-   ```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Eisen9/NLP-Sentiment-Analysis-Project.git
+   cd NLP-Sentiment-Analysis-Project
+   
 
-3. Download the necessary NLTK data:
-   ```python
-   import nltk
-   nltk.download('movie_reviews')
-   nltk.download('punkt')
-   ```
+2. **Install the necessary dependencies**:
+   - For the simple notebook, install the following libraries:
+     ```bash
+     pip install nltk pandas scikit-learn
+     ```
+   - For the BERT-based advanced notebook, install these:
+     ```bash
+     pip install transformers torch datasets
+     ```
 
-## Usage
-
-1. Run the Jupyter notebook:
-   ```
-   jupyter notebook NLP_Presentation.ipynb
-   ```
-
-2. Execute the cells in order to:
-   - Install and import necessary libraries
-   - Load and prepare the movie reviews dataset
-   - Test the sentiment analysis on sample reviews
-   - Run the interactive sentiment analysis function
-
-3. For the interactive sentiment analysis:
-   - Enter a movie review when prompted
-   - The program will classify the sentiment as Positive or Negative
-   - Type 'exit' to quit the interactive session
-
-## How It Works
-
-1. The project uses the NLTK movie reviews dataset, which contains labeled positive and negative reviews.
-2. The TextBlob library is used to perform sentiment analysis on the text.
-3. A simple classification function determines if a review is positive or negative based on its polarity score.
-4. The interactive function allows users to input their own reviews for real-time sentiment analysis.
-
-## Limitations and Future Improvements
-
-- The current model uses a simple polarity threshold for classification, which may not capture nuanced sentiments.
-- Future versions could implement more advanced NLP techniques such as:
-  - Custom training on the movie reviews dataset
-  - Use of more advanced models like BERT or RoBERTa
-  - Incorporation of aspect-based sentiment analysis
+3. **Run the notebooks**:
+   - Open either notebook in Jupyter or Google Colab to begin testing sentiment analysis:
+     - `NLP_Presentation.ipynb`: Basic Sentiment Analysis
+     - `Sentiment_Analysis_with_BERT.ipynb`: Advanced Sentiment Analysis with BERT
 
 ## Contributing
 
-Contributions to this project are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- NLTK for providing the movie reviews dataset
-- TextBlob developers for their simple yet effective NLP library
+Feel free to fork this repository, submit pull requests, or suggest features and improvements.
+```
