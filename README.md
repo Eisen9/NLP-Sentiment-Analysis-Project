@@ -5,7 +5,7 @@ This repository contains two Jupyter notebooks that showcase sentiment analysis 
 
 ## Files
 
-1. **`NLP_Presentation.ipynb`**
+1. **`Sentiment_Analysis_Simple.ipynb`**
    - **Description**: This notebook contains a simple implementation of sentiment analysis. It showcases basic NLP techniques to classify text as positive, negative, or neutral.
    - **Usage**: Suitable for educational purposes and simple text classification tasks.
    - **Key Libraries Used**:
